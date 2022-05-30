@@ -1,0 +1,17 @@
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2022.05.30 10:19:00 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/temp
+2022.05.30 10:19:00 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:38151]
+2022.05.30 10:19:00 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/elasticsearch]: /home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/elasticsearch/bin/elasticsearch
+2022.05.30 10:19:00 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+warning: no-jdk distributions that do not bundle a JDK are deprecated and will be removed in a future release
+2022.05.30 10:19:07 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2022.05.30 10:19:07 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436]: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-8.9.8.54436.jar:/home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/lib/jdbc/h2/h2-1.4.199.jar org.sonar.server.app.WebServer /home/jeeva/Documents/MACT/MACTAssesment/sonarqube-8.9.8.54436/temp/sq-process13009174348649680231properties
+2022.05.30 10:19:08 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2022.05.30 10:19:08 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2022.05.30 10:19:08 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2022.05.30 10:19:08 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
